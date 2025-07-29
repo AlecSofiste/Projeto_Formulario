@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Formulário de pesquisa</h1>
+    <p id="description">Obrigado por dispor seu tempo para ajudar em nossa pesquisa</p>
+    <form id="survey-form">
+      
+      <label for="name" id="name-label">Nome:</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+      <label for="email" id="email-label">E-mail:</label><br>
+      <input type="email" id="email" name="email" placeholder="Enter your e-mail" required><br>
+      <label for="number" id="number-label">Idade:</label><br>
+      <input type="number" id="number" name="number" placeholder="Enter your age" min="1" max="100"><br>
+      
+      <label for="escolaridade" id="escolaridade-label">Nivel de Ensino:</label><br>
+      <select id="dropdown" name="escolaridade">
+        <option value="fundamental">Fundamental</option>
+        <option value="medio">Médio</option>
+        <option value="tecnico">Técnico</option>
+        <option value="graduacao">Graduação</option>
+        <option value="pos">Pós-graduação</option>
+        <option value="void">Prefiro não informar</option>
+      </select><br>
+      
+      <label for="gender" id="gender-label">Gênero</label><br>
+      <input type="radio" id="cis-female" name="gender" value="cis-female">
+      <label for="cis-female">Mulher Cisgênero</label>
+      <input type="radio" id="trans-female" name="gender" value="trans-female">
+      <label for="trans-female">Mulher Transgênero</label><br>
+      <input type="radio" id="cis-male" name="gender" value="cis-male">
+      <label for="cis-male">Homem Cisgênero</label>
+      <input type="radio" id="trans-male" name="gender" value="trans-male">
+      <label for="trans-male">Homem Transgênero</label><br>
+      <input type="radio" id="non-binary" name="gender" value="non-binary">
+      <label for="non-binary">Não-Binário</label><br>
+
+      <p>O que achou do design desta página? Deixe sua opinião!</p>
+      <textarea name="opinion" id="text-box" placeholder="Sua opinião aqui..."></textarea><br>
+      
+      <p>O que você mais gostou no design do formulário?</p>
+      
+      <input type="checkbox" id="favorite1" name="favorite1" value="color">
+      <label for="favorite1">Paleta de cores</label><br>
+      <input type="checkbox" id="favorite2" name="favorite2" value="font">
+      <label for="favorite2">Tipografia</label><br>
+      <input type="checkbox" id="favorite3" name="favorite3" value="organized">
+      <label for="favorite3">Organização do conteúdo</label><br>
+      <input type="checkbox" id="favorite4" name="favorite4" value="diversity">
+      <label for="favorite4">Opções Inclusivas</label><br>
+      <input type="checkbox" id="favorite5" name="favorite5" value="options">
+      <label for="favorite5">Facilidade de navegação</label><br>
+
+      <button type="submit" id="submit" onclick="alert('Obrigado!')"">Confirmar</button>
+    </form>
+  </body>
+</html>
